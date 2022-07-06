@@ -10,8 +10,6 @@ repos:
       - id: check-merge-conflict
       - id: check-toml
       - id: check-xml
-      - id: check-yaml
-        args: [--unsafe]
       - id: detect-private-key
       - id: end-of-file-fixer
       - id: mixed-line-ending
@@ -28,16 +26,6 @@ repos:
     rev: v2.7.1
     hooks:
       - id: prettier
-
-  - repo: https://github.com/adrienverge/yamllint
-    rev: v1.26.3
-    hooks:
-      - id: yamllint
-
-  - repo: https://github.com/shellcheck-py/shellcheck-py
-    rev: v0.8.0.4
-    hooks:
-      - id: shellcheck
 
   - repo: https://github.com/scop/pre-commit-shfmt
     rev: v3.5.1-1
