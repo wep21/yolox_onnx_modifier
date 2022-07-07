@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Convert yolox onnx for autoware.universe",
+        description="Attach nms layer to yolox onnx",
         formatter_class=argparse.RawTextHelpFormatter,
     )
     parser.add_argument(
